@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Interaktif</title>
+  <link rel="stylesheet" href="kuis.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Kuis Pengetahuan Umum</h1>
+    <div id="quiz-box">
+      <div id="question-number">Pertanyaan 1</div>
+      <div id="question-text">Loading...</div>
+      <div id="options"></div>
+      <button id="next-btn" disabled>Selanjutnya</button>
+      <div id="timer">Waktu: 15</div>
+    </div>
+    <div id="result-box" class="hidden">
+      <h2>Skor Akhir:</h2>
+      <p id="score-text"></p>
+      <button onclick="location.reload()" style="
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;">
+  🔄 Coba Lagi
+    </button>
+    <button onclick="window.location.href='index.html'" style="
+    margin-top: 15px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;">
+    Kembali ke Portofolio
+    </button>
+    </div>
+  </div>
+
+  <script src="kuis.js"></script>
+</body>
+</html>
